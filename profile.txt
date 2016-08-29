@@ -10,7 +10,6 @@ alias edit_profile='open -a "Brackets" ~/.profile'
 #Reload profiles files
 alias reload_profile='source ~/.profile; echo Success: profile reloaded'
 
-
 #Find this
 alias findthis='find . -name $@'
 
@@ -27,7 +26,6 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 
-
 #Git commands 
 alias gs='git status '
 alias ga='git add '
@@ -38,14 +36,8 @@ alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
 
-
-
 #Change to all files to lower case in current folder
 alias change_name_lowercase="for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]"`"; done"
-
-
-#tester
-alias tester='$@ echo $@'
 
 # cd+ls-a
 #alias cdl='cd $@; ls -a'
