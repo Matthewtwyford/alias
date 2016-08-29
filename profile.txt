@@ -20,7 +20,7 @@ alias c="clear"
 alias h="history"
 alias hs='h | grep $@'
 
-# A quick way to get out of current directory ##
+# A quick way to get out of current directory
 alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
