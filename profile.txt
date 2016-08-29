@@ -1,19 +1,19 @@
 #Goto Desktop
 alias goto_desktop='cd ~/Desktop; echo Folder: Desktop'
-#Goto Control
-alias goto_control='cd ~/; echo Folder: Control'
-#Goto Git
-alias goto_git="cd ~/Documents/repos; ls -la ; echo Folder: Git Repo"
+
+#Goto user
+alias goto_user='cd ~/; echo Folder: Control'
 
 #Edit profile files
 alias edit_profile='open -a "Brackets" ~/.profile'
+
 #Reload profiles files
 alias reload_profile='source ~/.profile; echo Success: profile reloaded'
 
 #Find this
 alias findthis='find . -name $@'
 
-#Clear 
+#Clear
 alias c="clear"
 
 # History commands 
@@ -35,9 +35,3 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
-
-#Change to all files to lower case in current folder
-alias change_name_lowercase="for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]"`"; done"
-
-# cd+ls-a
-#alias cdl='cd $@; ls -a'
