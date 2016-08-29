@@ -5,10 +5,10 @@ alias goto_desktop='cd ~/Desktop; echo Folder: Desktop'
 alias goto_user='cd ~/; echo Folder: Control'
 
 #Edit profile files
-alias edit_profile='open -a "Brackets" ~/.profile'
+alias e_profile='open -a "Brackets" ~/.profile'
 
 #Reload profiles files
-alias reload_profile='source ~/.profile; echo Success: profile reloaded'
+alias r_profile='source ~/.profile; echo Success: profile reloaded'
 
 #Find this
 alias findthis='find . -name $@'
@@ -27,11 +27,14 @@ alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 
 #Git commands 
-alias gs='git status '
-alias ga='git add '
-alias gb='git branch '
+alias gs='git status'
+alias ga='git add'
+alias gb='git branch'
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
+alias go='git checkout'
 alias gk='gitk --all&'
 alias gx='gitx --all'
+
+# Update git shortcut. need to be in the current directory
+alias git_update="git init && git add . && git commit -m "Updated" && git push"
