@@ -1,0 +1,51 @@
+#Goto Desktop
+alias goto_desktop='cd ~/Desktop; echo Folder: Desktop'
+#Goto Control
+alias goto_control='cd ~/; echo Folder: Control'
+#Goto Git
+alias goto_git="cd ~/Documents/repos; ls -la ; echo Folder: Git Repo"
+
+#Edit profile files
+alias edit_profile='open -a "Brackets" ~/.profile'
+#Reload profiles files
+alias reload_profile='source ~/.profile; echo Success: profile reloaded'
+
+
+#Find this
+alias findthis='find . -name $@'
+
+#Clear 
+alias c="clear"
+
+# History commands 
+alias h="history"
+alias hs='h | grep $@'
+
+# A quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+
+
+#Git commands 
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+
+
+
+#Change to all files to lower case in current folder
+alias change_name_lowercase="for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]"`"; done"
+
+
+#tester
+alias tester='$@ echo $@'
+
+# cd+ls-a
+#alias cdl='cd $@; ls -a'
