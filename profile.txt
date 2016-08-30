@@ -36,5 +36,5 @@ alias go='git checkout'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 
-# Update git shortcut. need to be in the current directory
+# Update git shortcut. Need to be in the current directory
 alias git_update="git init && git add . && git commit -m "Updated" && git push"
